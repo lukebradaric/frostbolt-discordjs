@@ -1,9 +1,0 @@
-[{
-        "command": "example",
-        "file": "example_response.mp3"
-    },
-    {
-        "command": "exampleRandom",
-        "file": ["example_response_one.mp3", "example_response_two.mp3"]
-    }
-]
