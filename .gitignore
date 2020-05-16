@@ -1,5 +1,4 @@
-images
-sounds
-token.json
+images/
+sounds/
 commands.json
-
+token.json
