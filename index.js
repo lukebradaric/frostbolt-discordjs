@@ -1,15 +1,14 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const Token = 'TOKENHERE';
 const channelName = 'frostbolt';
 const initMessage = 'Frostbolt initialized.';
 const sendInitMessage = false;
 let connectedChannels = [];
-
-//Array of all registered commands
 let regCommands = [];
 
-client.login(Token);
+const tokenData = require('./token.json')
+const token = tokenData.token;
+client.login(token);
 
 client.on('ready', () => {
     console.log("Connected as " + client.user.tag);
