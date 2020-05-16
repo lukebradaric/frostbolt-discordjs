@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const Token = 'NzEwNzY4NzU3NjQ3MDgxNDky.Xr5RSg.6aIv4u4N3dl7cYWih1WI7HCC-ow';
+const Token = 'TOKENHERE';
 const channelName = 'frostbolt';
 const initMessage = 'Frostbolt initialized.';
 const sendInitMessage = false;
