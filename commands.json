@@ -1,25 +1,9 @@
 [{
-        "command": "t1",
-        "file": "tyler_yell.mp3"
+        "command": "example",
+        "file": "example_response.mp3"
     },
     {
-        "command": "stop",
-        "file": "tyler_yell.mp3"
-    },
-    {
-        "command": "laugh",
-        "file": "greek_tyler_baby.mp3"
-    },
-    {
-        "command": "nigga",
-        "file": ["keem.mp3", "shut_up.mp3"]
-    },
-    {
-        "command": "hello",
-        "file": ["hello_friends.mp3", "hello_there.mp3"]
-    },
-    {
-        "command": "medieval",
-        "file": "medieval.mp3"
+        "command": "exampleRandom",
+        "file": ["example_response_one.mp3", "example_response_two.mp3"]
     }
 ]
