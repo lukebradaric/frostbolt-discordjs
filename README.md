@@ -14,7 +14,7 @@ https://tinyurl.com/yaebv87f
 "token": "ENTER YOUR DISCORD BOT TOKEN HERE"
 }
 
-# Create a commands.json file and format new commands like this:
+# Create a commands.json file and format commands like this:
 [
     {
         "command": "example",
