@@ -30,4 +30,4 @@ https://tinyurl.com/yaebv87f
 ]
 ```
 
-# 3 Create a folder called "sounds" and include all sound files there
+# 3 Create a folder called "sounds" and add files there
