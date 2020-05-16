@@ -9,12 +9,15 @@ https://tinyurl.com/yaebv87f
 - [Command] [ResponseType] [File/Message] ✗
 
 
-# Create a token.json file and include this:
+# 1 Create a token.json file and include this:
+```
 {
 "token": "ENTER YOUR DISCORD BOT TOKEN HERE"
 }
+```
 
-# Create a commands.json file and format commands like this: 
+# 2 Create a commands.json file and format commands like this: 
+```
 [
     {
         "command": "example",
@@ -25,3 +28,4 @@ https://tinyurl.com/yaebv87f
         "file": ["example_response_one.mp3", "example_response_two.mp3"]
     }
 ]
+```
