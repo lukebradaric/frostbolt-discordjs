@@ -6,6 +6,7 @@ https://tinyurl.com/yaebv87f
 - Play audio ✓
 - Custom commands ✓
 - Custom token JSON ✓
+- Users can add mp3 command through chat ✓
 - [Command] [ResponseType] [File/Message] ✗
 
 
@@ -16,18 +17,8 @@ https://tinyurl.com/yaebv87f
 }
 ```
 
-# 2 Create a commands.json file and format commands like this: 
-```
-[
-    {
-        "command": "example",
-        "file": "example_response.mp3"
-    },
-    {
-        "command": "exampleRandom",
-        "file": ["example_response_one.mp3", "example_response_two.mp3"]
-    }
-]
-```
-
-# 3 Create a folder called "sounds" and add files there
+# 2 Create a commands.json file
+# 3 Create a folder called sounds
+# 4 How to add mp3 commands
+- Type in frostbolt discord channel
+- add your_command_name_here (upload mp3 file here)
