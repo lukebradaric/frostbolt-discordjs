@@ -6,6 +6,7 @@ https://tinyurl.com/yaebv87f
 - Play audio ✓
 - Custom commands ✓
 - Custom token JSON ✓
+- Users can add mp3 command through chat ✓
 - [Command] [ResponseType] [File/Message] ✗
 
 
