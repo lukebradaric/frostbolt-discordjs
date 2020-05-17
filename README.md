@@ -18,7 +18,7 @@ https://tinyurl.com/yaebv87f
 ```
 
 # 2 Create a commands.json file
-# 3 Create a sounds folder
+# 3 Create a folder called sounds
 # 4 How to add mp3 commands
 - Type in frostbolt discord channel
 - add your_command_name_here (upload mp3 file here)
