@@ -1,4 +1,4 @@
-# Frostbolt Discord Bot (WIP)
+# Frostbolt Discord Bot Creator (WIP)
 https://tinyurl.com/yaebv87f
 
 - Basic text commands ✓
@@ -29,3 +29,5 @@ https://tinyurl.com/yaebv87f
     }
 ]
 ```
+
+# 3 Create a folder called "sounds" and add files there
