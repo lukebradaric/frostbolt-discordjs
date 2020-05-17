@@ -72,7 +72,7 @@ client.on('message', (message) =>
                 if (cmd.command == newCmd)
                 {
                     console.log('Command ' + newCmd + ' already exists' + ' (' + message.member.user.tag + ')');
-                    replyToMessage(message, "Command already exists");
+                    message.reply("Command already exists");
                     return;
                 }
             }
@@ -135,15 +135,10 @@ client.on('message', (message) =>
     if (message.content == 'commands')
     {
         cmds = getCommandList();
-        respondToMessage(message, cmds);
+        message.reply(getCommandList());
     }
 
 });
-
-function respondToMessage(message, reply)
-{
-    client.channels.cache.get(message.channel.id).send(reply);
-}
 
 //Downloads and mp3 from a message
 function downloadMp3(url, name)
