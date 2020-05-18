@@ -65,6 +65,7 @@ client.on('message', (message) =>
         if (message.attachments.first())
         {
             newCmd = message.content.substring(4, message.content.length).trim();
+            newCmd = removeSpecialChar(newCmd);
 
             //Check if command already exists
             for (let cmd of regCommands)
@@ -139,6 +140,13 @@ client.on('message', (message) =>
     }
 
 });
+
+
+//Remove all special characters
+function removeSpecialChar(str)
+{
+    return str.replace(/[^a-zA-Z ]/g, '');
+}
 
 //Downloads and mp3 from a message
 function downloadMp3(url, name)
