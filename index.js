@@ -1,7 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const channelName = 'frostbolt';
-const useSpecificChannel = true;
+const useSpecificChannel = false;
+const prefix = "%";
+const requirePrefix = false;
 const initMessage = 'Frostbolt initialized.';
 const sendInitMessage = false;
 let regCommands = [];
@@ -58,8 +60,20 @@ client.on('message', (message) =>
         return;
     }
 
+    if (message.content.charAt(0) != prefix && requirePrefix)
+    {
+        return;
+    }
+
+    let addInit = 0;
+    let addFinit = 3;
+    if (requirePrefix)
+    {
+        addInit = 1;
+        addFinit = 4;
+    }
     //If is add message, and has a command after add prefix
-    if (message.content.substring(0, 3) == 'add' && message.content.length >= 5)
+    if (message.content.substring(addInit, addFinit) == 'add' && message.content.length >= 5)
     {
         //If message has mp3 attachment, download it
         if (message.attachments.first())
@@ -133,9 +147,14 @@ client.on('message', (message) =>
         }
     }
 
-    if (message.content == 'commands')
+    //Return commands list
+    let getCmdMessage = 'commands';
+    if (requirePrefix)
     {
-        cmds = getCommandList();
+        getCmdMessage = prefix + getCmdMessage;
+    }
+    if (message.content == getCmdMessage)
+    {
         message.reply(getCommandList());
     }
 
