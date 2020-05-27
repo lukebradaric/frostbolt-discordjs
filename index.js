@@ -8,9 +8,12 @@ const initMessage = 'Frostbolt initialized.';
 const sendInitMessage = false;
 let regCommands = [];
 let connectedChannels = [];
+let ytdl = require('ytdl-core');
 
 let request = require('request');
 let fs = require('fs');
+
+let isPlaying = false;
 
 const tokenData = require('./token.json');
 const token = tokenData.token;
@@ -62,6 +65,19 @@ client.on('message', (message) =>
 
     if (message.content.charAt(0) != prefix && requirePrefix)
     {
+        return;
+    }
+
+    if (message.content.substring(0, 4).includes('play') && !isPlaying)
+    {
+        console.log('music');
+        isPlaying = true;
+        let link = message.content.substring(5, message.content.length);
+        console.log(link);
+        message.member.voice.channel.join().then((connection) =>
+        {
+            const dispatcher = connection.play(ytdl(link, { filter: "audioonly" }));
+        });
         return;
     }
 
