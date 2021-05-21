@@ -10,15 +10,14 @@ https://tinyurl.com/yaebv87f
 - [Command] [ResponseType] [File/Message] ✗
 
 
-# 1 Create a token.json file and include this:
+## Gettings Started
+* Create a token.json file and include this:
 ```
-{
-"token": "ENTER YOUR DISCORD BOT TOKEN HERE"
-}
+{ "token": "ENTER YOUR DISCORD BOT TOKEN HERE" }
 ```
 
-# 2 Create a commands.json file
-# 3 Create a folder called sounds
-# 4 How to add mp3 commands
-- Type in frostbolt discord channel
-- add your_command_name_here (upload mp3 file here)
+* Create a commands.json file
+* Create a folder called sounds
+* How to add mp3 commands
+  * Type in frostbolt discord channel
+  * add your_command_name_here (upload mp3 file here)
