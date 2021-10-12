@@ -1,4 +1,4 @@
-# Frostbolt Discord Bot Creator (WIP)
+# Frostbolt Discord Bot Creator
 https://tinyurl.com/yaebv87f
 
 - Basic text commands ✓
